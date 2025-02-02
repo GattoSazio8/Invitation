@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Invitation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+            color: white;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff4081;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .heart {
+            font-size: 50px;
+            cursor: pointer;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+        .heart:hover {
+            color: red;
+            transform: scale(1.2);
+        }
+        .rsvp-container {
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You're Invited! 💖</h1>
+        <p>Can you be my forever Valentines date?.</p>
+        <p><strong>Date:</strong> February 14, 2025</p>
+        <p><strong>Time:</strong> 5:00-6:00 PM</p>
+        <p><strong>Location:</strong> BGC TAGUIG</p>
+        <p>Click below to RSVP:</p>
+        
+        <div class="rsvp-container">
+            <span class="heart" onclick="rsvp('yes')">❤️ Yes</span>
+            <span class="heart" onclick="rsvp('no')">💔 No</span>
+        </div>
+    </div>
+    
+    <p class="footer">We can't wait to celebrate love with you! 💕</p>
+    
+    <script>
+        function rsvp(response) {
+            if (response === 'yes') {
+                window.location.href = 'valentine-photo.html';
+            } else {
+                window.location.href = 'valentine-no-photo.html';
+            }
+        }
+    </script>
+</body>
+</html>
